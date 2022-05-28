@@ -55,7 +55,7 @@ LSDL2_MIXER	:= `pkg-config SDL2_mixer --libs --static` $(FLAC) $(MPG123) $(OGG) 
 LSDL2_NET	:= `pkg-config SDL2_net --libs --static` -lws2_32 -liphlpapi
 
 
-LIBS		:= $(LSDL2)
+LIBS		:= $(LSDL2) $(LSDL2_TTF)
 LIBS		+= -static-libgcc -static
 
 # Sources and objects #########################################################

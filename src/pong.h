@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 struct Display {
 	SDL_Window *window;
 	SDL_Renderer *renderer;
@@ -10,6 +11,7 @@ struct Display {
 	int h;
 	int xoffset;
 	int yoffset;
+	TTF_Font *font;
 };
 
 
